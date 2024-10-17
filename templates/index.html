@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Content Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>AI Content Generator</h1>
+    <form id="content-form">
+        <label for="prompt">Enter prompt:</label>
+        <textarea id="prompt" name="prompt" rows="4" cols="50"></textarea><br><br>
+        
+        <label for="language">Select Language:</label>
+        <select id="language" name="language">
+            <option value="en">English</option>
+            <option value="de">German</option>
+        </select><br><br>
+        
+        <input type="submit" value="Generate Content">
+    </form>
+    <h2>Generated Content:</h2>
+    <div id="generated-content"></div>
+    <button id="download-pdf" style="display: none;">Download as PDF</button>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</body>
+</html>
