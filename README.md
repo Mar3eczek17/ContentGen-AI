@@ -23,7 +23,7 @@ A prototype of an AI-based content automation application that provides an innov
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/username/repo_name.git
+   git clone https://github.com/Mar3eczek17/ContentGen-AI.git
    ```
 
 2. Navigate to the project directory:
