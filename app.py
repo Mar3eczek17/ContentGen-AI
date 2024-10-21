@@ -41,8 +41,12 @@ def index():
 
 @app.route('/generate', methods=['POST'])
 def generate():
-    prompt = request.form['prompt']
+    prompt = request.form.get('prompt', '').strip() # Get and trim whitespace
     language = request.form['language']
+
+    if not prompt:
+        return jsonify({'content': 'No content generated. Please enter a valid prompt.'})
+
     content = generate_content(prompt, language)
     
     links = {
