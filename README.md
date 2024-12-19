@@ -80,3 +80,7 @@ Contributions are welcome! Please feel free to submit a pull request or report i
 ## License
 
 This project is licensed under the MIT License. See the LICENSE file for more details.
+
+## References
+
+https://learn.deeplearning.ai/courses/reasoning-with-o1
